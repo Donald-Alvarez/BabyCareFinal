@@ -1,0 +1,5 @@
+#about .about-img {
+	background: #444 url(../img/CumplimientoAbout.jpg) center center no-repeat;
+	background-size: cover;
+	height: 570px;
+}

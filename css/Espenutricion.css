@@ -1,0 +1,5 @@
+#about .about-img {
+	background: #444 url(../img/ImportanciaNutricion.jpg) center center no-repeat;
+	background-size: cover;
+	height: 570px;
+}

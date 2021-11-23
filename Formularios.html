@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Formulario Nutrcion</title>
+</head>
+
+<body>
+
+  <h1>Formulario Nutricional </h1>
+  <div class="container">
+    <div class="row">
+      <div clas="col">
+        <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+          <form id="FormNutricion" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="Nombre" class="form-label">Nombre del niño</label>
+              <input id="Nombre" name="Nombre" type="text" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label for="Apellido" class="form-label">Apellido del niño</label>
+              <input id="Apellido" name="Apellido" type="text" class="form-control">
+            </div>
+
+            <div>
+              <div class="col-md-3">
+                <label for="Edad">Edad</label>
+                <select name="Edad" id="Edad" class="form-select">
+                  <option>Seleccionar Edad</option>
+                  <option>6 Meses</option>
+                  <option>7 Meses</option>
+                  <option>8 Meses</option>
+                  <option>9 Meses</option>
+                  <option>10 Meses</option>
+                  <option>11 Meses</option>
+                  <option>1 Año</option>
+                  <option>2 Años</option>
+                  <option>3 Años</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label id="Pregunta4" for="Pregunta4" class="form-label">¿Que le da a su niño?</label>
+               
+                <label id="OtrosP4" for="Alimentacion" class="form-label"></label>
+                <input id="Alimentacion" name="Alimentacion" type="text" class="form-control"
+                  placeholder="Vitaminas, Minerales, Fluoruro">
+                <br />
+              </div>
+              <div class="col-md-4">
+                <label id="Lechebebé" for="LecheBEBE" class="form-label">¿Que tipo de leche le da a su niño?</label>
+                
+                <select name="Leche" id="Leche" class="form-select">
+                  <option>Seleccionar Leche</option>
+                  <option>En Polvo</option>
+                  <option>Materna</option>
+                
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="Crecimiento" id="CrecimientoP" class="form-label">¿Que piensa del crecimiento y peso de su niño?</label>
+                <select name="Crecimiento" id="Crecimiento" class="form-select">
+                  <option>Seleccionar</option>
+                  <option>Poco</option>
+                  <option>Muy poco.</option>
+                  <option>Mucho.</option>
+                  <option>Esta bien.</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Nombre: <input type="text" id="Nombretutor" class="form-control" placeholder="Nombre del Tutor" required>
+               </div>
+               <div class="form-group">
+                 <p>Correo: <input type="text" id="Correotutor" class="form-control" placeholder="Correo" required>
+               </div>
+            </div>
+            
+            <button id="EnviarForm" type="Submit" class="btn-warning fw-bold">Enviar</button>
+        </div>
+       
+
+      </div>
+      
+      <!--Respertar-->
+      </div>
+    </div>
+    </div>
+    </div>
+
+        
+  </form>
+  <div class="form-group">
+  <a href="Especilistanutricion.html"> <button type="submit" class="btn-warning fw-bold">Continuar</button></a>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  <script src="/js/FormNutricion.js"></script>
+  <script src="/Generar Inscrtitos.js"></script>
+
+</body>
+
+
+</html>
